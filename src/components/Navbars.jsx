@@ -10,44 +10,42 @@ const NavBar = props => {
     const [value, setValue] = useState(0);
     const [loading, setloading] = useState(false);
 
-    useEffect(() => {
-        switchTabs();
-    }, [value])
+    // useEffect(() => {
+    //     switchTabs();
+    // }, [value])
 
     const handleChange = (event, value) => {
         setValue(value);
-
-        // setloading(true);
     };
 
-    const switchTabs = () => {
-        switch (value) {
-            case 1:
-                return <Services props={props} value={value} />;
-                break;
-            case 2:
-                return <History props={props} value={value} />;
-                break;
-            case 3:
-                return <FindUS props={props} value={value} />;
-                break;
-            default:
-                return <Homepage props={props} value={value} />;
-                break;
-        }
-        // if (value === 0) {
-        //     return <Homepage />;
-        // }
-        // if (value === 1) {
-        //     return <Services />;
-        // }
-        // if (value === 2) {
-        //     return <History />;
-        // }
-        // if (value === 3) {
-        //     return <FindUS />;
-        // }
-    };
+    // const switchTabs = () => {
+    //     switch (value) {
+    //         case 1:
+    //             return <Services props={props} value={value} />;
+    //             break;
+    //         case 2:
+    //             return <History props={props} value={value} />;
+    //             break;
+    //         case 3:
+    //             return <FindUS props={props} value={value} />;
+    //             break;
+    //         default:
+    //             return <Homepage props={props} value={value} />;
+    //             break;
+    //     }
+    //     // if (value === 0) {
+    //     //     return <Homepage />;
+    //     // }
+    //     // if (value === 1) {
+    //     //     return <Services />;
+    //     // }
+    //     // if (value === 2) {
+    //     //     return <History />;
+    //     // }
+    //     // if (value === 3) {
+    //     //     return <FindUS />;
+    //     // }
+    // };
 
     return (
         <>
@@ -55,10 +53,10 @@ const NavBar = props => {
                 <AppBar position="static">
                     <Toolbar>
                         <Tabs value={value} onChange={handleChange}>
-                            <Tab label="Home" />
-                            <Tab label="Services" to={props.path} />
-                            <Tab label="History" />
-                            <Tab label="Find us" />
+                            <Link to={`/`}>Home</Link>
+                            <Link to={`/services`}>Services</Link>
+                            <Link to={`/about`}>History</Link>
+                            <Link to={`/contact`}>FindUs</Link>
                         </Tabs>
                     </Toolbar>
                 </AppBar>
