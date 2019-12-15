@@ -78,7 +78,7 @@ export default function SignIn() {
                         type="submit"
                         fullWidth
                         variant="contained"
-                        color="primary"
+                        color="secondary"
                         className={classes.submit}
                     >
                         Ask for a Q

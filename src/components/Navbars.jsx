@@ -1,14 +1,19 @@
 import React, { useState, useEffect } from 'react'
-import { AppBar, Toolbar, Typography, Tab, Tabs, CircularProgress } from '@material-ui/core';
-import Services from './Services';
-import History from './History';
-import FindUS from './FindUs';
-import Homepage from './Homepage';
+import { fade, makeStyles } from '@material-ui/core/styles';
+import { AppBar, Toolbar, ListItem, ListItemText, Typography, Tab, Tabs, CircularProgress } from '@material-ui/core';
+import logo from '../images/logo.png';
 import { Link } from 'react-router-dom';
 
+const useStyles = makeStyles(theme => ({
+    menuButton: {
+        marginLeft: 'auto',
+    },
+}));
 const NavBar = props => {
     const [value, setValue] = useState(0);
     const [loading, setloading] = useState(false);
+
+    const classes = useStyles();
 
     // useEffect(() => {
     //     switchTabs();
@@ -18,46 +23,20 @@ const NavBar = props => {
         setValue(value);
     };
 
-    // const switchTabs = () => {
-    //     switch (value) {
-    //         case 1:
-    //             return <Services props={props} value={value} />;
-    //             break;
-    //         case 2:
-    //             return <History props={props} value={value} />;
-    //             break;
-    //         case 3:
-    //             return <FindUS props={props} value={value} />;
-    //             break;
-    //         default:
-    //             return <Homepage props={props} value={value} />;
-    //             break;
-    //     }
-    //     // if (value === 0) {
-    //     //     return <Homepage />;
-    //     // }
-    //     // if (value === 1) {
-    //     //     return <Services />;
-    //     // }
-    //     // if (value === 2) {
-    //     //     return <History />;
-    //     // }
-    //     // if (value === 3) {
-    //     //     return <FindUS />;
-    //     // }
-    // };
-
     return (
         <>
             <div className="App">
                 <AppBar position="static">
-                    <Toolbar>
-                        <Tabs value={value} onChange={handleChange}>
-                            <Link to={`/`}>Home</Link>
-                            <Link to={`/services`}>Services</Link>
-                            <Link to={`/about`}>History</Link>
-                            <Link to={`/contact`}>FindUs</Link>
-                        </Tabs>
+                    <Toolbar style={{ display: 'flex' }}>
+                        <img src={logo} style={{ width: '7%' }} alt='test' />
+                        <div className={classes.menuButton}>
+                            <Tabs value={value} onChange={handleChange}>
+                                <Tab label="Home" component={Link} to="/" />
+                                <Tab label="Services" component={Link} to="/services" />
+                                <Tab label="History" component={Link} to="/about" />
+                                <Tab label="FindUs" component={Link} to="/contact" />
+                            </Tabs>
+                        </div>
                     </Toolbar>
                 </AppBar>
             </div>
@@ -66,3 +45,5 @@ const NavBar = props => {
     )
 }
 export default NavBar;
+
+// <Typography color="inherit">Home</Typography>

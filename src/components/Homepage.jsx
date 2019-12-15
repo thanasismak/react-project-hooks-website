@@ -2,7 +2,8 @@ import React from 'react';
 import { useTheme } from '@material-ui/core/styles';
 import { createMuiTheme } from '@material-ui/core';
 import HomepageImage from './HomepageImage';
-import DividerHomepage from './DividerHomepage';
+import DividerHomepage from './DividerServicesHomepage';
+import DividerExpertiseHP from './DividerExpertiseHomepage';
 
 const theme = createMuiTheme({
     palette: {
@@ -21,8 +22,9 @@ function Homepage(props) {
     const theme = useTheme();
     return (
         <>
-        <HomepageImage theme={theme} />
-        <DividerHomepage theme={theme} />
+            <HomepageImage theme={theme} />
+            <DividerHomepage theme={theme} />
+            <DividerExpertiseHP theme={theme} />
         </>
     );
 }
