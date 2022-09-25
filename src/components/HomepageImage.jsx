@@ -3,10 +3,6 @@ import { useTheme } from '@material-ui/core/styles';
 import imgworld from '../images/23.jpg';
 import { Grid } from '@material-ui/core';
 import HomePageForm from './Forms/HomepageForm';
-import Carousel from 'nuka-carousel';
-import car1 from '../images/car1.jpg';
-import car2 from '../images/car2.jpg';
-import car3 from '../images/car3.jpg';
 // import { AutoRotatingCarousel } from 'material-auto-rotating-carousel';
 
 const image = {
