@@ -1,5 +1,5 @@
 import React from 'react';
-import { FormControlLabel, Select, TextField, Grid, Link, Box, Checkbox, CssBaseline, Button, Avatar } from '@material-ui/core';
+import { FormControlLabel, Select, Checkbox, CssBaseline, Button, Avatar } from '@material-ui/core';
 import LockOutlinedIcon from '@material-ui/icons/Restore';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
@@ -56,7 +56,6 @@ export default function SignIn() {
                         label="Email Address"
                         name="email"
                         autoComplete="email"
-                        autoFocus
                     />
                     <Select
                         variant="outlined"
@@ -83,23 +82,8 @@ export default function SignIn() {
                     >
                         Ask for a Q
                     </Button>
-                    {/* <Grid container>
-                        <Grid item xs>
-                            <Link href="#" variant="body2">
-                                Forgot password?
-                            </Link>
-                        </Grid>
-                        <Grid item>
-                            <Link href="#" variant="body2">
-                                {"Don't have an account? Sign Up"}
-                            </Link>
-                        </Grid>
-                    </Grid> */}
                 </form>
             </div>
-            {/* <Box mt={8}>
-                <Copyright />
-            </Box> */}
         </Container>
     );
 }

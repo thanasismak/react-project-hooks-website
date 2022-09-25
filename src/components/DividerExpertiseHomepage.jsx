@@ -4,7 +4,7 @@ import { makeStyles, MuiThemeProvider } from '@material-ui/core/styles';
 import { CssBaseline, Divider, Paper, Typography, Grid } from '@material-ui/core';
 import { FormatQuote } from '@material-ui/icons'
 import imgworld from '../images/233.jpg'
-import { WiredProgress } from "wired-progress"
+import "wired-progress";
 import { typography } from '@material-ui/system';
 
 const useStyles = makeStyles(theme => ({
@@ -32,10 +32,7 @@ const useStyles = makeStyles(theme => ({
     paper: {
         backgroundColor: '#F5F5F5', // #8B0000
         opacity: 0.7,
-
-        // padding: theme.spacing(3),
         height: '80vh',
-        // textAlign: 'center',
         backgroundBlendMode: 'darken',
         backgroundImage: `url(${imgworld})`,
         backgroundPosition: 'center' /* Center the image */,

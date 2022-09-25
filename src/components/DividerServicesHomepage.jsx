@@ -5,42 +5,6 @@ import { List, ListItem, ListItemAvatar, ListItemText, Avatar, CssBaseline, Divi
 import { Image, Work, BeachAccess } from '@material-ui/icons';
 import InvertedButton from '../components/InvertedButton';
 
-// const styles = theme => ({
-//     root: {
-//         marginTop: 30,
-//         backgroundColor: `#4b6cb7`,
-//         borderTop: 'solid 3px #998643',
-//         paddingTop: '16px',
-//         overflowX: 'hidden'
-//     },
-//     footerSections: {
-//         margin: '0 16px'
-//     },
-//     subFooter: {
-//         backgroundColor: '#FFC837',
-//         padding: '8px 16px 8px 16px',
-//         marginTop: '8px'
-//     },
-//     footerText: {
-//         color: 'white',
-//         fontSize: '18px',
-//         lineHeight: 1.5
-//     },
-//     invertedBtnDark: {
-//         color: '#fff',
-//         backgroundColor: 'transparent',
-//         border: '2px #fff solid',
-//         boxShadow: 'none',
-//         margin: '8px'
-//     },
-//     white: {
-//         color: '#ffffff'
-//     },
-//     flexContainer: {
-//         display: 'flex'
-//     }
-// })
-
 const useStyles = makeStyles(theme => ({
     root: {
         width: '100%',
@@ -51,11 +15,6 @@ const useStyles = makeStyles(theme => ({
         backgroundColor: theme.palette.secondary.main,
         width: '80px',
         height: '80px',
-        // '&:hover': {
-        //     width: '100px',
-        //     height: '100px',
-        //     boxShadow: '1px 1px 4px 0px rgba(0, 0, 0, 0.75) inset',
-        // },
     },
     paper: {
         backgroundColor: '#F5F5F5', // #8B0000
@@ -108,7 +67,7 @@ export default function FullWidthGrid() {
                                     <ListItemText primary="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
                                     />
                                 </ListItem>
-                                <InvertedButton className={classes.invertedBtnDark} href="#">
+                                <InvertedButton className={classes.invertedBtnDark} href="#/services">
                                     Read More...
                                 </InvertedButton>
                                 <Divider variant="fullWidth" orientation component="li" />
@@ -119,8 +78,11 @@ export default function FullWidthGrid() {
                                         </Avatar>
                                     </ListItemAvatar>
                                     <ListItemText primary="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-                                        secondary="Read More..." />
+                                    />
                                 </ListItem>
+                                <InvertedButton className={classes.invertedBtnDark} href="#/services">
+                                    Read More...
+                                </InvertedButton>
                                 <Divider variant="fullWidth" orientation component="li" />
                                 <ListItem>
                                     <ListItemAvatar>
@@ -129,8 +91,11 @@ export default function FullWidthGrid() {
                                         </Avatar>
                                     </ListItemAvatar>
                                     <ListItemText primary="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-                                        secondary="Read More..." />
+                                    />
                                 </ListItem>
+                                <InvertedButton className={classes.invertedBtnDark} href="#/services">
+                                    Read More...
+                                </InvertedButton>
                             </List>
                         </Paper>
                     </Grid>

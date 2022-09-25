@@ -1,17 +1,17 @@
 import React from 'react';
 import { useTheme } from '@material-ui/core/styles';
 import imgworld from '../images/23.jpg';
-// import Paper from "@bit/mui-org.material-ui.paper";
-
-import { Grid, FormControl, TextField, Paper, CardContent, CardMedia, Card } from '@material-ui/core';
-
+import { Grid } from '@material-ui/core';
 import HomePageForm from './Forms/HomepageForm';
+import Carousel from 'nuka-carousel';
+import car1 from '../images/car1.jpg';
+import car2 from '../images/car2.jpg';
+import car3 from '../images/car3.jpg';
+// import { AutoRotatingCarousel } from 'material-auto-rotating-carousel';
 
 const image = {
   flexGrow: 1,
-  // padding: theme.spacing(3),
   height: '100vh',
-  // textAlign: 'center',
   backgroundBlendMode: 'darken',
   backgroundImage: `url(${imgworld})`,
   backgroundPosition: 'center' /* Center the image */,
@@ -44,16 +44,6 @@ const styles = theme => ({
   },
 });
 
-const formControl = {
-  // position: 'initial !important',
-  fontWeight: 'fullWidth',
-  fontSize: 17,
-  color: 'black',
-  fontFamily: 'sans-serif',
-  // margin: theme.spacing(1),
-  minWidth: 200,
-};
-
 function HomepageImage() {
   const theme = useTheme();
   return (
@@ -61,7 +51,14 @@ function HomepageImage() {
       <div style={image}>
         <Grid container spacing={12} className={styles.root}>
           <Grid item xs={6}>
+
+            {/* <Carousel slideIndex={0}
+              afterSlide={2}> */}
             <HomePageForm />
+            {/* <img src={car1} />
+              <img src={car2} />
+              <img src={car3} />
+            </Carousel> */}
           </Grid>
         </Grid>
       </div>

@@ -1,7 +1,7 @@
 import React from 'react';
 import './App.css';
 import { MuiThemeProvider, createMuiTheme } from '@material-ui/core';
-import { Route, Router, HashRouter, Switch } from 'react-router-dom';
+import { Route, HashRouter, Switch } from 'react-router-dom';
 
 import HomePage from './components/Homepage';
 import Services from './components/Services';

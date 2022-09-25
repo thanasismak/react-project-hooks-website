@@ -1,12 +1,8 @@
 import React from 'react';
-import { makeStyles, useTheme, withStyles, MuiThemeProvider } from '@material-ui/core/styles';
+import { makeStyles, useTheme, MuiThemeProvider } from '@material-ui/core/styles';
 import { Grid, CssBaseline } from '@material-ui/core'
-import Typography from '@material-ui/core/Typography'
 import classNames from 'classnames'
-// import Link from 'next/link'
-import InvertedButton from './InvertedButton'
 import { SocialIcon } from 'react-social-icons';
-import fb from '../../src/fb.svg';
 const useStyles = makeStyles(theme => ({
     root: {
         // marginTop: 30,
@@ -76,14 +72,6 @@ const Footer = () => {
                                 item
                                 xs={12}
                             >
-                                {/* <InvertedButton
-                                    style={{ width: '200px' }}
-                                    className={classes.invertedBtnDark}
-                                    href="https://franciscan.secure.force.com/form?formid=217772"
-                                    title="Request Info"
-                                >
-                                    Request Info
-                                </InvertedButton> */}
                             </Grid>
                             <Grid
                                 className={classes.flexContainer}
@@ -91,14 +79,6 @@ const Footer = () => {
                                 item
                                 xs={6}
                             >
-                                {/* <InvertedButton
-                                    style={{ width: '92px' }}
-                                    className={classes.invertedBtnDark}
-                                    href="https://franciscanuniversity.force.com/portal"
-                                    title="Apply"
-                                >
-                                    Apply
-                                </InvertedButton> */}
                             </Grid>
                             <Grid className={classes.flexContainer} item xs={6}>
                                 {/* <InvertedButton
@@ -117,43 +97,16 @@ const Footer = () => {
                             <li>
                                 {<SocialIcon url="http://facebook.com/in/jaketrent" />}
                                 {<SocialIcon url="http://google.com/in/jaketrent" />}
-                                {/* <Link
-                                    prefetch={true}
-                                    as="/contact"
-                                    href="/page?type=aboutPages&id=contact"
-                                >
-                                    <a className={classes.white} style={{ fontWeight: 400 }}>
-                                        Contact
-                                    </a>
-                                </Link> */}
                             </li>
-                                    <li>
-                                        {/* <Link
-                                    prefetch={true}
-                                    as="/directions-and-attractions"
-                                    href="/page?type=aboutPages&id=directions-and-attractions"
-                                >
-                                    <a className={classes.white} style={{ fontWeight: 400 }}>
-                                        Directions
-                                    </a>
-                                </Link> */}
-                                    </li>
+                            <li>
+                            </li>
                         </ul>
                     </Grid>
-                    </Grid>
-                    {/* <Grid className={classes.subFooter} item xs={12}>
-                    <Typography
-                        className={classes.white}
-                        variant="subheading"
-                        component={'span'}
-                    >
-                        © {currentYear} 24Hours Courier
-                    </Typography>
-                </Grid> */}
+                </Grid>
             </MuiThemeProvider>
         </div>
-            )
-        
-        }
-        
+    )
+
+}
+
 export default Footer
