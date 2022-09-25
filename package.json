@@ -3,17 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.26",
-    "@fortawesome/free-brands-svg-icons": "^5.12.0",
-    "@fortawesome/free-regular-svg-icons": "^5.12.0",
-    "@material-ui/core": "^4.6.0",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-regular-svg-icons": "^5.15.4",
+    "@material-ui/core": "^4.12.4",
     "material-auto-rotating-carousel": "^3.0.2",
-    "nuka-carousel": "^4.6.0",
-    "react": "^16.11.0",
-    "react-dom": "^16.11.0",
-    "react-scripts": "^3.3.0",
-    "react-swipeable-views": "^0.13.3",
-    "wired-progress": "^2.0.0"
+    "nuka-carousel": "^4.8.4",
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0",
+    "react-scripts": "^3.4.4",
+    "react-swipeable-views": "^0.13.9",
+    "wired-progress": "^2.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
